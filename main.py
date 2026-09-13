@@ -6,7 +6,8 @@ engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
 
-book = open('topic 1.pdf', 'rb')
+#edit your book name with extention (.pdf)
+book = open('YOUR BOOK NAME.pdf', 'rb')
 
 pdfReader = PyPDF2.PdfReader(book)
 pages = len(pdfReader.pages)
